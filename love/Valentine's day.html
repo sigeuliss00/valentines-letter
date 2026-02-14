@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Valentine's Day, Lovee. </title>
+    <style>
+        body {background-color: lightpink; text-align: center; padding-top: 100px;}
+        button {padding: 10px 20px; margin: 10px; font-size: 16px; border-radius: 10px; border: none; cursor: pointer;}
+        .yes {background-color: lightgrey;}
+        .no {background-color:lightgray;}
+        #result {margin-top: 30px ;}
+        img {width: 200px; margin-top: 20px; border-radius: 15px;}
+    </style>
+</head>
+<body>
+    <audio id="bgMusic" loop muted>
+        <source src="Nadin Amizah - Semua Aku Dirayakan (Official Lyric Video).mp3" 
+        type="audio/mpeg">
+        </audio>
+    <h1>Halo, Tian sayang!!! :3 💞</h1>
+    <p>Hari ini tanggal 14 Februari loh, kamu tau ga hari apa?<br>BTUL! ini hari valentinee :] </p>
+    <h2>Tapi aku mau nanya deh, yang... Kamu sayang aku ngga?? :c</h2>
+    <button class="yes" onclick="sayYes()">IYAA!! :D</button>
+    <button class="no" onclick="sayNo()">Ngga.. :c </button>
+    <div id="result"></div>
+    <script>
+        document.addEventListener("click",function() {var music= document.getElementById("bgMusic");music.muted=false;
+            music.play();}, {once: true});
+        function sayYes() {document.getElementById("result").innerHTML=`
+            <h2>YEYY?!?!? Aku juga sayang kamuu, cintakuu (*/ω＼*) </h2>
+        <p>And now... i want to tell you something, bb!! <br> Thankyou for everything ya, sayang. 
+            Every moments, efforts, times, and affections you gave to me to keep me feel safe and loved.<br> 
+            I love you to the moon and back, sayang.❤️ </p> `}
+        function sayNo() {document.getElementById("result").innerHTML=`
+            <h2> SUMPIL?? KAMU GA SAYANG AKUUU???!! :(</h2>
+            <p> hiks, semdih deh.. nda usah ngomong ama aku lagi kamu.. </p>
+            <img src="kusying.jpg" 
+            alt="foto kusying semdih pokokna😿😿😿"> `;}
+    </script>
+</body>
+</html>
